@@ -73,18 +73,22 @@ h6 {
     --light-gray: hsl(212, 45%, 89%);
     --grayish-blue: hsl(220, 15%, 55%);
     --dark-blue: hsl(218, 44%, 22%);
+
+    --border-radius: 1.5rem;
 }
 
 /* Layout */
 
 body {
-    font-family: 'Outfit', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--grayish-blue);
+
+
+    background-color: var(--light-gray);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 
 }
 
@@ -96,17 +100,44 @@ body {
     justify-content: center;
     gap: 1rem;
     max-width: 20rem;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+    /* Add a black 50% opacity drop shadow */
+}
+
+img {
+    border-radius: calc(var(--border-radius)/2);
 }
 
 .attribution {
-    align-items: flex-end;
+
+
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+}
+
+.attribution p {
+    color: var(--dark-blue);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.5rem;
 }
 
 h1 {
+    font-family: 'Outfit', sans-serif;
     font-weight: 700;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 p {
+    font-family: 'Outfit', sans-serif;
     text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--grayish-blue);
+
+
 }
