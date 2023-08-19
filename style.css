@@ -112,12 +112,10 @@ img {
 }
 
 .attribution {
-
-
-    position: fixed;
-    bottom: 0;
-    padding: 1rem;
-}
+    position: sticky;
+    height: 2.75rem;
+    top: calc(100vh - 2.75rem);
+  }
 
 .attribution p {
     color: var(--dark-blue);
